@@ -1,2 +1,4 @@
-# csd-340
-CSD340-H330 Web Development with HTML and (2251-DD)
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+*Student: Caitlan Nichols
+*Instructor: Sue Sampson
