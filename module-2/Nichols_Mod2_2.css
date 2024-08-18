@@ -1,0 +1,52 @@
+/* General styles for HTML and body */
+html, body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+
+/* Styling for the intro class */
+.intro {
+    text-indent: 2em;
+}
+
+/* Styling for the sentence class */
+.sentence {
+    font-style: italic;
+}
+
+/* Address styling */
+address {
+    text-align: center;
+}
+
+.website-link {
+    font-size: 1.25em;
+    color: #4F3674;
+    text-decoration: none;
+}
+
+.website-link:hover {
+    text-decoration: underline;
+    background-color: #D6A800;
+}
+
+.website-link:visited {
+    color: #6D3F7D; /* Custom color for visited links */
+}
