@@ -1,0 +1,46 @@
+/* Google Fonts integration */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply font family to the whole document */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Styling for headings */
+h1, h2, h3, h4 {
+    background-color: #3498db; /* Background color of your choice */
+    color: #fff; /* Font color that contrasts well with the background */
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+/* Link styling */
+a {
+    color: #1e90ff; /* Link color that blends with your color scheme */
+    text-decoration: none;
+}
+
+/* Link hover state */
+a:hover {
+    color: #ff6347; /* Hover color that blends with your color scheme */
+}
+
+/* Visited link state */
+a:visited {
+    color: #1e90ff; /* Visited link color that blends with your color scheme */
+}
+
+/* Horizontal rule styling */
+hr {
+    border: 0;
+    border-top: 1px solid #D6A800;
+}
