@@ -18,6 +18,11 @@ h1 {
 .last-div {
     width: 100%;
     margin-top: 60px;
+    overflow: hidden; /* Clear floats */
+}
+
+/* Float the link to the right */
+.last-div a {
     float: right;
     margin-bottom: 20px;
 }
