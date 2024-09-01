@@ -1,19 +1,16 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Container Style */
 #container {
     text-align: center;
     margin: 20px;
 }
 
-/* H1 Styles */
 h1 {
-    color: rgba(50, 100, 150, 0.8); /* Optional: Apply a color */
+    color: red; /* Text color set to red */
     margin-bottom: 20px;
 }
 
@@ -27,14 +24,14 @@ h1 {
 
 /* Gallery Item Styles */
 .gallery-item {
-    border: 1px solid #ddd;
+    border: 1px solid red; /* Box outline set to red */
     padding: 10px;
     text-align: center;
 }
 
 /* H3 Styles */
 h3 {
-    color: rgba(80, 150, 200, 0.8); /* Optional: Apply a color */
+    color: red; /* Text color set to red */
     margin-bottom: 10px;
 }
 
@@ -47,7 +44,7 @@ figure {
 figcaption {
     font-style: italic;
     font-size: 0.75em;
-    color: rgba(100, 100, 100, 0.8); /* Optional: Apply a color */
+    color: red;
 }
 
 /* Link back to the portal page */
@@ -57,4 +54,4 @@ figcaption {
 
 .back-link a {
     text-decoration: none;
-    color: #007acc;
+    color: blue; 
