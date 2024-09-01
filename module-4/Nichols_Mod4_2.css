@@ -13,7 +13,7 @@
 
 /* H1 Styles */
 h1 {
-    color: red !important; /* Force red color for H1 */
+    color: red !important; /* Text color set to red */
     margin-bottom: 20px;
 }
 
@@ -34,7 +34,7 @@ h1 {
 
 /* H3 Styles */
 h3 {
-    color: red !important; /* Force red color for H3 */
+    color: red !important; /* Text color set to red */
     margin-bottom: 10px;
 }
 
@@ -47,20 +47,20 @@ figure {
 figcaption {
     font-style: italic;
     font-size: 0.75em;
-    color: blue !important; 
+    color: red !important; /* Text color set to red */
 }
 
-/* Ensure all text in links and generic text are red */
-a, p, span, div {
-    color: blue;
+/* Link Styles */
+a {
+    color: blue !important; /* Link color set to blue */
+    text-decoration: none; /* Optional: Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
 }
 
 /* Link back to the portal page */
 .back-link {
     margin-top: 20px;
-}
-
-.back-link a {
-    text-decoration: none;
-    color: blue;
 }
