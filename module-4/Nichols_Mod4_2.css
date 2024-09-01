@@ -47,12 +47,12 @@ figure {
 figcaption {
     font-style: italic;
     font-size: 0.75em;
-    color: red !important; /* Force red color for figcaption */
+    color: blue !important; 
 }
 
 /* Ensure all text in links and generic text are red */
 a, p, span, div {
-    color: blue; /* Apply red color to all text elements */
+    color: blue;
 }
 
 /* Link back to the portal page */
