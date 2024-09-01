@@ -52,7 +52,7 @@ figcaption {
 
 /* Ensure all text in links and generic text are red */
 a, p, span, div {
-    color: red !important; /* Apply red color to all text elements */
+    color: blue; /* Apply red color to all text elements */
 }
 
 /* Link back to the portal page */
@@ -62,5 +62,5 @@ a, p, span, div {
 
 .back-link a {
     text-decoration: none;
-    color: blue !important;
+    color: blue;
 }
