@@ -1,16 +1,19 @@
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Container Style */
 #container {
     text-align: center;
     margin: 20px;
 }
 
+/* H1 Styles */
 h1 {
-    color: red; /* Text color set to red */
+    color: red !important; /* Force red color for H1 */
     margin-bottom: 20px;
 }
 
@@ -31,7 +34,7 @@ h1 {
 
 /* H3 Styles */
 h3 {
-    color: red; /* Text color set to red */
+    color: red !important; /* Force red color for H3 */
     margin-bottom: 10px;
 }
 
@@ -44,7 +47,12 @@ figure {
 figcaption {
     font-style: italic;
     font-size: 0.75em;
-    color: red;
+    color: red !important; /* Force red color for figcaption */
+}
+
+/* Ensure all text in links and generic text are red */
+a, p, span, div {
+    color: red !important; /* Apply red color to all text elements */
 }
 
 /* Link back to the portal page */
@@ -54,4 +62,5 @@ figcaption {
 
 .back-link a {
     text-decoration: none;
-    color: blue; 
+    color: red !important; /* Link color set to red */
+}
