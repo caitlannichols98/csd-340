@@ -62,5 +62,5 @@ a, p, span, div {
 
 .back-link a {
     text-decoration: none;
-    color: red !important; /* Link color set to red */
+    color: blue !important;
 }
