@@ -70,9 +70,8 @@ h1 {
     padding: 2px 16px;
 }
 
-/* Updated footer styles */
 footer {
-    background-color: #333; /* Same color as header */
+    background-color: #333;
     color: white;
     position: absolute;
     bottom: 0;
@@ -83,7 +82,7 @@ footer {
 
 footer p {
     font-weight: 400;
-    font-style: italic;
+    font-style: italic !important!;
     margin: 0;
 }
 
