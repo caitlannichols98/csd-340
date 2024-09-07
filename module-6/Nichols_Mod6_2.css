@@ -1,0 +1,97 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #922e00; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #922e00; /* Choose a suitable color */
+    border-bottom: 15px solid #b46600; /* Choose a suitable color */
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white; /* Set link color to white */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 400; /* Optional: Adjust font weight if needed */
+}
+
+#navbar a:hover {
+    background-color: #000000; /* Choose a suitable color */
+    color: #f1f1f1; /* Choose a suitable color */
+}
+
+/* Update container styles */
+#container {
+    margin: 2% 5%;
+    padding: 10px;
+    /* Align container to left side */
+    text-align: left;
+}
+
+/* Updated card styles */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 400px; 
+    margin: 0; /* Remove margin */
+    float: left; 
+    padding: 10px; /* Add padding for better appearance */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: #333; /* Choose a suitable color */
+    font-weight: 400;
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+/* Updated footer styles */
+footer {
+    background-color: #333; /* Same color as header */
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+}
+
+footer p {
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
