@@ -1,0 +1,111 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #922e00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #922e00;
+    border-bottom: 15px solid #b46600;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#navbar a:hover {
+    background-color: #000000;
+    color: #f1f1f1;
+}
+
+#container {
+    margin: 2% 5% 100px 5%;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Updated card styles */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 60%; /* Reduced width for smaller cards */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white; /* White background for card */
+    margin-left: 0; /* Align to the left */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.8em;
+    color: #b46600; /* Orange color for card titles */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th {
+    color: white;
+    background-color: #b83a00; /* Orange background for table headers */
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border for table cells */
+}
+
+footer {
+    background-color: #b85300;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center vertically */
+}
+
+footer .last-div {
+    order: 2; /* Move the "Back to Landing Page" to the right */
+}
+
+footer div:first-child {
+    order: 1; /* Ensure copyright text stays on the left */
+}
