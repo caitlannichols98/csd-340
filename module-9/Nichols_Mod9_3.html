@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caitlan Nichols">
+    <meta name="description" content="Assignment 9.3 – JavaScript Exercise, Part 1 Date: September, 20th, 2024">
+    <link rel="stylesheet" href="Nichols_mod2_2.css">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        // Declare JavaScript variables for span tag replacements
+        var firstVariableValue = "creative";
+        var secondVariableValue = "gardening";
+        var thirdVariableValue = "coding";
+        var fourthVariableValue = "self-reliant";
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 9.3: JavaScript - Part 1 </h1>
+        <h2>Introducing Myself</h2>
+        <p class="intro">I was born and raised in a small town in FL. Growing up, I enjoyed exploring the outdoors which has followed me into adulthood. My family and I spent a good amount of time outdoors for camping.</p>
+        
+        <!-- Four spans with underscores for JavaScript interaction -->
+        <p>One of my favorite hobbies is <span id="hobby">_________</span> and anything that has to do with creating. I enjoy crafting things that can be used in day-to-day life along with gifting them to others. I have grown to love <span id="activity">_________</span> since this allows me to become more <span id="trait">_________</span>.</p>
+        
+        <p>In addition to my hobbies, I am passionate about technology and <span id="passion">_________</span>. I spend my free time learning new programming languages and working on personal coding projects.</p>
+        
+        <!-- Buttons to replace span content -->
+        <p>
+            <button type="button" onclick="document.getElementById('hobby').innerHTML = firstVariableValue">Reveal Hobby</button>
+            <button type="button" onclick="document.getElementById('activity').innerHTML = secondVariableValue">Reveal Activity</button>
+            <button type="button" onclick="document.getElementById('trait').innerHTML = fourthVariableValue">Reveal Trait</button>
+            <button type="button" onclick="document.getElementById('passion').innerHTML = thirdVariableValue">Reveal Passion</button>
+        </p>
+
+        <hr />
+        <address>
+            <p>Bellevue University <a href="http://www.bellevue.edu" class="website-link">www.bellevue.edu</a></p>
+            <p>1000 Galvin Road South</p>
+            <p>Bellevue, NE 68005</p>
+        </address>
+    </div>
+</body>
+</html>
