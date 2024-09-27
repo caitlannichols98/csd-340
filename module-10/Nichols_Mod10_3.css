@@ -1,0 +1,88 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f0ff; /* Light lavender background */
+    color: #333333; /* Dark grey text */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Styling for Links */
+a {
+    text-decoration: none;
+    color: #5f4b8b; /* Lavender link color */
+    font-weight: bold;
+}
+
+/* Hover effect for links */
+a:hover {
+    color: #4a3c7b; /* Darker lavender on hover */
+}
+
+/* Main Image Styling */
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Image hover zoom effect */
+img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+}
+
+/* Text Div Styling */
+div {
+    margin: 15px 0;
+    text-align: left;
+    padding: 10px;
+    background-color: #e6e1ff; /* Light lavender background for divs */
+    border-radius: 5px;
+}
+
+/* Styling for text under photos */
+div:hover {
+    text-decoration: underline;
+    text-decoration-color: white; /* Delicate white underline */
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #5f4b8b; /* Lavender background for header */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #5f4b8b; /* Lavender background for footer */
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Styling for the last div in the footer */
+footer .last-div {
+    margin-top: 10px;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    img {
+        width: 100%;
+        height: auto; /* Make images responsive */
+    }
+
+    header, footer {
+        padding: 15px;
+    }
+}

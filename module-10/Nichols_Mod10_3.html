@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caitlan Nichols">
+    <meta name="description" content="Assignment 10.3: JavaScript - Part 2 Date: September 26th, 2024">
+    <link rel="stylesheet" href="Nichols_Mod10_3.css">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    </header>
+
+    <script>
+      // Function to display image when clicked
+      function changeImageOnClick(imageElement, newSrc) {
+        imageElement.src = newSrc;
+      }
+
+      // Function to handle user input and change the image
+      function onImageClick(imageElement) {
+        const userInput = prompt("Enter the image file name you want to display (e.g., 'new_image.jpg'):");
+        if (userInput) {
+          imageElement.src = userInput;
+        }
+      }
+    </script>
+
+    <link rel='stylesheet' type='text/css' href='body1.css' />
+
+    <br />
+    <div>
+      <a href=#
+         onmouseover="document.cave.src='poll.jpg';"
+         onmouseout= "document.cave.src='soda.jpg';">
+        <img border="0" name="cave" src="soda.jpg" onclick="onImageClick(this)">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='purple';"
+         onmouseout="this.style.color='black';">
+      Run your mouse over the image to change it, these are photos I edited in my Photography class. Subject: B&W Industrial.
+      <br />
+    </div>
+
+    <div>
+      <a href=#
+         onmouseover="document.landscape.src='horizontal.jpg';"
+         onmouseout="document.landscape.src='landscape.jpg';">
+        <img border="0" name="landscape" src="landscape.jpg" onclick="onImageClick(this)">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='blue';"
+         onmouseout="this.style.color='black';">
+      Run your mouse over the image to change it, Photography class. Subject: Horizontal vs Landscape
+      <br />
+      Right-click and select View Source for more details.
+    </div>
+
+    <footer>
+        <div>
+            &copy; 2024 Nichols
+        </div>
+        <div class="last-div">
+            <a href="../index.html">Back to Landing Page</a>
+        </div>
+    </footer>
+</body>
+</html>
