@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caitlan Nichols">
+    <meta name="description" content="Assignment 11.2: JavaScript - Part 3 Date: October 6th, 2024">
+    <link rel="stylesheet" href="Nichols_Mod11_2.css">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    
+    <!-- Text box -->
+    <label for="task">Enter a task:</label>
+    <input type="text" id="task" placeholder="Type your task here...">
+    
+    <!-- Buttons for the operations -->
+    <button onclick="addTask()">Add</button>
+    <button onclick="deleteLastTask()">Delete Last Entry</button>
+    <button onclick="displayTasks()">Display</button>
+    
+    <!-- Output section -->
+    <div id="taskList"></div>
+    
+    <script>
+        // Array to store tasks
+        let tasks = [];
+
+        // Function to add a task to the array
+        function addTask() {
+            let task = document.getElementById('task').value;
+            if (task) {
+                tasks.push(task);
+                alert(`Task added: "${task}" at position ${tasks.length}`);
+                document.getElementById('task').value = ''; // Clear input box after adding
+            } else {
+                alert("Please enter a task before adding.");
+            }
+        }
+
+        // Function to delete the last task from the array
+        function deleteLastTask() {
+            if (tasks.length > 0) {
+                let removedTask = tasks.pop();
+                alert(`Task removed: "${removedTask}"`);
+            } else {
+                alert("No tasks to delete.");
+            }
+        }
+
+        // Function to display all tasks
+        function displayTasks() {
+            let taskListDiv = document.getElementById('taskList');
+            taskListDiv.innerHTML = ''; // Clear previous list
+
+            if (tasks.length > 0) {
+                let listHtml = '<h2>Task List:</h2><ol>';
+                for (let i = 0; i < tasks.length; i++) {
+                    listHtml += `<li>${tasks[i]}</li>`;
+                }
+                listHtml += '</ol>';
+                taskListDiv.innerHTML = listHtml;
+            } else {
+                taskListDiv.innerHTML = '<p>No tasks available.</p>';
+            }
+        }
+    </script>
+</body>
+
+</html>
