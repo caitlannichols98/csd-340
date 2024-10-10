@@ -1,0 +1,188 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caitlan Nichols">
+    <meta name="description" content="Assignment 12.2: JavaScript - Part 4 Date: October, 9th, 2024">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <!-- Inline CSS -->
+    <style>
+        /* Ensure the list items are numbered with regular numbers */
+        ol#bookList {
+            list-style-type: decimal; /* Use regular numbers */
+        }
+
+        /* Google Fonts integration */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        /* Apply font family to the whole document */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container styling */
+        #container {
+            margin-top: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        /* Center the h1 title on the page */
+        h1 {
+            text-align: center;
+            font-weight: 700;
+        }
+
+        /* Style for the side-by-side divs */
+        .side-by-side {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Style for the left and right divs */
+        .left-div, .right-div {
+            width: 45%;
+        }
+
+        /* Style for the last div */
+        .last-div {
+            width: 100%;
+            margin-top: 60px;
+            overflow: hidden; /* Clear floats */
+        }
+
+        /* Float the link to the right */
+        .last-div a {
+            float: right;
+            margin-bottom: 20px;
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        .last-div a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for h3 tags */
+        h3 {
+            font-weight: 500;
+        }
+
+        /* Style for ordered list (book list) */
+        ol#bookList {
+            border: 1px solid red;
+            border-radius: 15px;
+            padding: 10px;
+            list-style: decimal inside;
+            font-weight: 400;
+        }
+
+        /* Style for unordered list (learned items list) */
+        ul.learned-list {
+            border: 1px dashed red;
+            border-radius: 15px;
+            padding: 10px;
+            list-style: upper-roman inside;
+            font-weight: 400;
+        }
+
+        /* Style for buttons */
+        button {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #4682b4;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+       
+        <div class="side-by-side">
+            <div class="left-div">
+                <h3>Top 10 Favorite Books</h3>
+                <ol id="bookList">
+                    <!-- This will be populated by JavaScript -->
+                </ol>
+
+                <!-- Buttons for ordering the book list -->
+                <button onclick="displayTopToBottom()">Top to Bottom</button>
+                <button onclick="displayBottomToTop()">Bottom to Top</button>
+            </div>
+
+            <div class="right-div">
+                <h3>5 Things I’ve Learned Since the Course Started</h3>
+                <ul class="learned-list">
+                    <li>HTML coding</li>
+                    <li>CSS code</li>
+                    <li>Creating and using GitHub repositories</li>
+                    <li>The creation of batch files</li>
+                    <li>Designing through codes</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="last-div">
+            <a href="../index.html">back to Landing Page</a>
+        </div>
+    </div>
+
+    <script>
+        // Array of top 10 books
+        const books = [
+            "The Body Keeps the Score",
+            "I Have No Mouth but I Must Scream",
+            "A Gathering of Shadows",
+            "Two Twisted Crowns",
+            "One Dark Window",
+            "The Book of Azrael",
+            "Quicksilver",
+            "Fourth Wing",
+            "Iron Flame",
+            "Onyx Storm"
+        ];
+
+        // Function to display books from top to bottom (ascending order)
+        function displayTopToBottom() {
+            const bookList = document.getElementById('bookList');
+            bookList.innerHTML = ''; // Clear the current list
+            bookList.removeAttribute('reversed'); // Remove reversed attribute if present
+            bookList.setAttribute('start', '1'); // Start from 1
+            books.forEach(function(book) {
+                let listItem = document.createElement('li');
+                listItem.textContent = book;
+                bookList.appendChild(listItem);
+            });
+        }
+
+        // Function to display books from bottom to top (descending order)
+        function displayBottomToTop() {
+            const bookList = document.getElementById('bookList');
+            bookList.innerHTML = ''; // Clear the current list
+            bookList.setAttribute('reversed', ''); // Set reversed attribute for descending order
+            bookList.setAttribute('start', books.length); // Start from the length of the array
+            books.slice().reverse().forEach(function(book) {
+                let listItem = document.createElement('li');
+                listItem.textContent = book;
+                bookList.appendChild(listItem);
+            });
+        }
+
+        // Automatically display the list in ascending order when the page loads
+        window.onload = displayTopToBottom;
+    </script>
+</body>
+</html>
